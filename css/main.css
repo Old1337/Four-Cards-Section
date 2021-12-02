@@ -1,0 +1,120 @@
+/* Start Global Rules */
+:root {
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+  --very-dark-blue: hsl(234, 12%, 34%);
+  --grayish-blue: hsl(229, 6%, 66%);
+  --very-light-gray: hsl(0, 0%, 98%);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  font-size: 15px;
+  background-color: var(--very-light-gray);
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1440px;
+  }
+}
+/* End Global Rules */
+
+main.container {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+.text {
+  text-align: center;
+  padding-top: 50px;
+}
+h1 {
+  color: var(--very-dark-blue);
+  font-weight: 200;
+  font-size: 29px;
+}
+span {
+  display: block;
+  font-weight: bold;
+}
+
+.text p {
+  color: var(--grayish-blue);
+  width: 500px;
+  max-width: 100%;
+  margin: auto;
+}
+
+.boxes .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1200px;
+  max-width: 100%;
+  gap: 30px;
+}
+@media (max-width: 767px) {
+  .boxes .container {
+    flex-direction: column;
+  }
+}
+.box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 2px 8px 14px 0 hsl(229deg 6% 66% / 60%);
+  margin-top: 50px;
+}
+h2 {
+  color: var(--very-dark-blue);
+}
+.box.cyan {
+  border-top: var(--cyan) 4px solid;
+}
+.box.red {
+  border-top: var(--red) 4px solid;
+}
+.box.yellow {
+  border-top: var(--orange) 4px solid;
+}
+.box.blue {
+  border-top: var(--blue) 4px solid;
+}
+.box p {
+  color: var(--grayish-blue);
+}
+img {
+  display: block;
+  margin-left: auto;
+}
